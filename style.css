@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    overflow: hidden ;
+    background-color: rgba(0, 0, 0, 0.882);
+}
+:root{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* header */
+header{
+    min-width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home{
+    color: white !important;
+}
+/* small device nav */
+.showNavBTN{
+    display: none;
+}
+
+/*nav*/
+.close{
+    display: none;
+}
+
+.active{
+    transition: all 0.3s;
+    transform: translateX(0px) !important;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav .links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.item .link{
+    margin: 0px 10px;
+    color: gray;
+    font-size: 1.5rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+
+}
+.link:hover{
+    color: white;
+    transition: all 0.3s;
+}
+
+header .headerPofilePhoto{
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+  
+}
+.headerPofilePhoto .userPhoto{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid gray;
+
+}
+.headerPofilePhoto span{
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+.userPhoto img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* main */
+.main{
+    width: 100%;
+    height: 100vh ;
+}
+
+
+/* main RIGHT */
+.main .userLargeImage{
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    width:450px;
+    height: 400px;
+    
+}
+.userLargeImage img{
+    height: 100%;
+    width: 100%;
+}
+
+.userLargeImage::after{
+    position: absolute;
+    border-radius: 5px;
+    width: 450px;
+    height:320px;
+    background-color: rgba(15, 13, 13, 0.323);
+    content: "";
+    box-shadow: 0px 0px 15px 2px rgba(128, 128, 128, 0.22);
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+/*main left*/
+.main .left{
+    width: 550px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 5%;
+    top:25%;
+}
+
+.left .span{
+    color: gray;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.left h1{
+    font-size:4.2rem;
+    color: white;
+    line-height:70px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.left .red{
+    color: rgb(197, 13, 99);
+}
+
+.left p{
+    font-size: 1.2rem;
+    color: gray;
+    text-transform: capitalize;
+    
+}
